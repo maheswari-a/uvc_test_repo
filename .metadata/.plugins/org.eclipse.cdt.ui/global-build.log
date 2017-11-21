@@ -1,0 +1,137 @@
+16:07:00 **** Build of configuration Debug for project USBBulkSourceSink ****
+cs-make all 
+'Building file: ../cyfx_gcc_startup.S'
+'Invoking: Cross ARM GNU Assembler'
+arm-none-eabi-gcc -mcpu=arm926ej-s -marm -mthumb-interwork -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -x assembler-with-cpp -I"C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc" -MMD -MP -MF"cyfx_gcc_startup.d" -MT"cyfx_gcc_startup.o" -c -o "cyfx_gcc_startup.o" "../cyfx_gcc_startup.S"
+'Finished building: ../cyfx_gcc_startup.S'
+' '
+'Building file: ../cyfxtx.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=arm926ej-s -marm -mthumb-interwork -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D__CYU3P_TX__=1 -I"C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc" -I"C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3" -std=gnu11 -MMD -MP -MF"cyfxtx.d" -MT"cyfxtx.o" -c -o "cyfxtx.o" "../cyfxtx.c"
+'Finished building: ../cyfxtx.c'
+' '
+'Building file: ../default.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=arm926ej-s -marm -mthumb-interwork -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D__CYU3P_TX__=1 -I"C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc" -I"C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3" -std=gnu11 -MMD -MP -MF"default.d" -MT"default.o" -c -o "default.o" "../default.c"
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:159:0,
+                 from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-debug.c: In function 'ztex_log':
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-debug.c:109:5: warning: 'return' with a value, in function returning void [enabled by default]
+     return(255);
+     ^
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:161:0,
+                 from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-ep0.c: In function 'ztex_ep0_handler':
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-ep0.c:277:25: warning: passing argument 1 of 'CyU3PDmaMultiChannelReset' from incompatible pointer type [enabled by default]
+                         CyU3PDmaMultiChannelReset (&glChHandleUVCStream);
+                         ^
+In file included from C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3system.h:28:0,
+                 from ../default.c:26:
+C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3dma.h:1845:1: note: expected 'struct CyU3PDmaMultiChannel *' but argument is of type 'struct CyU3PDmaChannel *'
+ CyU3PDmaMultiChannelReset (
+ ^
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:161:0,
+                 from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-ep0.c:291:25: warning: implicit declaration of function 'CyFxUVCApplnAbortHandler' [-Wimplicit-function-declaration]
+                         CyFxUVCApplnAbortHandler ();
+                         ^
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-ep0.c:318:29: warning: passing argument 1 of 'CyU3PDmaMultiChannelReset' from incompatible pointer type [enabled by default]
+                             CyU3PDmaMultiChannelReset (&glChHandleUVCStream);
+                             ^
+In file included from C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3system.h:28:0,
+                 from ../default.c:26:
+C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3dma.h:1845:1: note: expected 'struct CyU3PDmaMultiChannel *' but argument is of type 'struct CyU3PDmaChannel *'
+ CyU3PDmaMultiChannelReset (
+ ^
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69:0,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c: In function 'ztex_usb_start_usb':
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:184:18: warning: unused variable 'usbSpeed' [-Wunused-variable]
+  CyU3PUSBSpeed_t usbSpeed = CyU3PUsbGetSpeed();
+                  ^
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c: At top level:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:328:6: warning: conflicting types for 'CyFxUVCApplnAbortHandler' [enabled by default]
+ void CyFxUVCApplnAbortHandler(void) {
+      ^
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:161:0,
+                 from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-ep0.c:291:25: note: previous implicit declaration of 'CyFxUVCApplnAbortHandler' was here
+                         CyFxUVCApplnAbortHandler ();
+                         ^
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69:0,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c: In function 'CyFxUVCApplnInit':
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:874:4: warning: passing argument 1 of 'CyU3PDmaMultiChannelCreate' from incompatible pointer type [enabled by default]
+    CY_U3P_DMA_TYPE_MANUAL_MANY_TO_ONE, &dmaMultiConfig);
+    ^
+In file included from C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3system.h:28:0,
+                 from ../default.c:26:
+C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3dma.h:1602:1: note: expected 'struct CyU3PDmaMultiChannel *' but argument is of type 'struct CyU3PDmaChannel *'
+ CyU3PDmaMultiChannelCreate (
+ ^
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69:0,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:725:26: warning: unused variable 'gpioConfig' [-Wunused-variable]
+  CyU3PGpioSimpleConfig_t gpioConfig;
+                          ^
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:724:19: warning: unused variable 'gpioClock' [-Wunused-variable]
+  CyU3PGpioClock_t gpioClock;
+                   ^
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:721:26: warning: unused variable 'channelConfig' [-Wunused-variable]
+  CyU3PDmaChannelConfig_t channelConfig;
+                          ^
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c: In function 'UVCAppThread_Entry':
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:961:5: warning: passing argument 1 of 'CyU3PDmaMultiChannelSetXfer' from incompatible pointer type [enabled by default]
+     apiRetStatus = CyU3PDmaMultiChannelSetXfer(&glChHandleUVCStream,0, 0);
+     ^
+In file included from C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3system.h:28:0,
+                 from ../default.c:26:
+C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3dma.h:1692:1: note: expected 'struct CyU3PDmaMultiChannel *' but argument is of type 'struct CyU3PDmaChannel *'
+ CyU3PDmaMultiChannelSetXfer (
+ ^
+In file included from C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex-default.c:69:0,
+                 from ../default.c:57:
+C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3/ztex.c:988:8: warning: passing argument 1 of 'CyU3PDmaMultiChannelReset' from incompatible pointer type [enabled by default]
+        &glChHandleUVCStream);
+        ^
+In file included from C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3system.h:28:0,
+                 from ../default.c:26:
+C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/inc/cyu3dma.h:1845:1: note: expected 'struct CyU3PDmaMultiChannel *' but argument is of type 'struct CyU3PDmaChannel *'
+ CyU3PDmaMultiChannelReset (
+ ^
+'Finished building: ../default.c'
+' '
+'Building target: USBBulkSourceSink.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-eabi-gcc -mcpu=arm926ej-s -marm -mthumb-interwork -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_build/fx3_fw/fx3.ld" -nostartfiles -Xlinker --gc-sections -L"C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/fw_lib/1_3_3/fx3_debug" -L"C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\/lib/gcc/arm-none-eabi/4.8.1" -L"C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\/arm-none-eabi/lib" -L"C:\Users\htic\Desktop\daily_task\18_11_17\linux_uvc\ztex_uvc_linux\uvc_test_repo\ztex\fx3" -Wl,-Map,"USBBulkSourceSink.map" -Wl,-d  -Wl,--no-wchar-size-warning -Wl,--entry,CyU3PFirmwareEntry -o "USBBulkSourceSink.elf"  ./cyfx_gcc_startup.o ./cyfxtx.o ./default.o   -lcyu3lpp -lcyfxapi -lcyu3threadx -lc -lgcc
+'Finished building target: USBBulkSourceSink.elf'
+' '
+cs-make --no-print-directory post-build
+'Generate boot-loadable binary image'
+'C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\/util/elf2img/elf2img.exe' -i USBBulkSourceSink.elf -o USBBulkSourceSink.img -v
+Note: 256 bytes of interrupt vector code have been removed from the image.
+Endian-ness    : Little
+      Use the "-vectorload yes" option to retain this code.
+Entry point    : 0x40015348
+
+Program header table offset: 0x00000034
+Program header count       : 3
+Program header entry size  : 0x0020
+Copying data from program header:
+	Addr=0x00000100 Size(words)=0x000008c8 FileSize=0x000008c8 Offset=0x00000100 Flags=0x00000005
+Copying data from program header:
+	Addr=0x40003000 Size(words)=0x00004000 FileSize=0x00004000 Offset=0x00003000 Flags=0x00000005
+Copying data from program header:
+	Addr=0x40013000 Size(words)=0x00004000 FileSize=0x00004000 Offset=0x00013000 Flags=0x00000005
+Copying data from program header:
+	Addr=0x40023000 Size(words)=0x000018aa FileSize=0x000018aa Offset=0x00023000 Flags=0x00000005
+Copying data from program header:
+	Addr=0x40030000 Size(words)=0x00000e5d FileSize=0x00000217 Offset=0x00030000 Flags=0x00000006
+' '
+
+16:07:02 Build Finished (took 2s.430ms)
+
